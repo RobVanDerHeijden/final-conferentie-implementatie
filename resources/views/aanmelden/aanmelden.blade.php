@@ -22,7 +22,7 @@
                 <td><label for="slot2">Slot voorkeur: </label></td>
                 <td>
                     <select name="slot-voorkeur" class="slot-voorkeur">
-                        <option value="">Geen voorkeur</option>
+                        <option value="0">Geen voorkeur</option>
                         @foreach($slotenVoorkeur as $slotVoorkeur)
                             <option value="{{ $slotVoorkeur->id }}">{{ $slotVoorkeur->dag }} : {{ $slotVoorkeur->beginTijd }} - {{ $slotVoorkeur->eindTijd }} Zaal[{{ $slotVoorkeur->idZaal }}]</option>
                         @endforeach
