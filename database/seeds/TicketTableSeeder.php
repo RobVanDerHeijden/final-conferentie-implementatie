@@ -11,6 +11,7 @@ class TicketTableSeeder extends Seeder
      */
     public function run()
     {
+        /*
         // Ticket id:1
         $ticket = new Ticket();
         $ticket->reservering = 1;
@@ -357,5 +358,6 @@ class TicketTableSeeder extends Seeder
         $ticket->soort = 5;
         $ticket->barcode = "664112235";
         $ticket->save();
+        */
     }
 }
