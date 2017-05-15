@@ -40,7 +40,7 @@
                     <?php if(isset($bezetSlot->omschrijving)) { $bezetSlot->omschrijving; } ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $vrijdagQuery[$x]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $vrijdagQuery[$x+($countPerZaal*1)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $vrijdagQuery[$x+($countPerZaal*1)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $vrijdagQuery[$x+($countPerZaal*1)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -50,7 +50,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $vrijdagQuery[$x+($countPerZaal*1)]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $vrijdagQuery[$x+($countPerZaal*2)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $vrijdagQuery[$x+($countPerZaal*2)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $vrijdagQuery[$x+($countPerZaal*2)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -60,7 +60,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $vrijdagQuery[$x+($countPerZaal*2)]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $vrijdagQuery[$x+($countPerZaal*3)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $vrijdagQuery[$x+($countPerZaal*3)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $vrijdagQuery[$x+($countPerZaal*3)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -94,7 +94,7 @@
                 <tr>
                     <td>{{ $zaterdagSlot->beginTijd }} - {{ $zaterdagSlot->eindTijd }}</td>
                     <?php 
-                        $statusText = DB::table('statuses')->where('idStatus', $zaterdagQuery[$x]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zaterdagQuery[$x]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zaterdagQuery[$x]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -104,7 +104,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $zaterdagQuery[$x]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $zaterdagQuery[$x+($countPerZaal*1)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zaterdagQuery[$x+($countPerZaal*1)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zaterdagQuery[$x+($countPerZaal*1)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -114,7 +114,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $zaterdagQuery[$x+($countPerZaal*1)]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $zaterdagQuery[$x+($countPerZaal*2)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zaterdagQuery[$x+($countPerZaal*2)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zaterdagQuery[$x+($countPerZaal*2)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -124,7 +124,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $zaterdagQuery[$x+($countPerZaal*2)]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $zaterdagQuery[$x+($countPerZaal*3)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zaterdagQuery[$x+($countPerZaal*3)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zaterdagQuery[$x+($countPerZaal*3)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -158,7 +158,7 @@
                 <tr>
                     <td>{{ $zondagSlot->beginTijd }} - {{ $zondagSlot->eindTijd }}</td>
                     <?php 
-                        $statusText = DB::table('statuses')->where('idStatus', $zondagQuery[$x]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zondagQuery[$x]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zondagQuery[$x]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -168,7 +168,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $zondagQuery[$x]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $zondagQuery[$x+($countPerZaal*1)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zondagQuery[$x+($countPerZaal*1)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zondagQuery[$x+($countPerZaal*1)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -178,7 +178,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $zondagQuery[$x+($countPerZaal*1)]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $zondagQuery[$x+($countPerZaal*2)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zondagQuery[$x+($countPerZaal*2)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zondagQuery[$x+($countPerZaal*2)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
@@ -188,7 +188,7 @@
                     ?>
                     <td class= {{ $agendaSlotStatus }}>ID: {{ $zondagQuery[$x+($countPerZaal*2)]->id }} {{ $statusText[0]->status }} | {{ $omschrijving }} </td>
                     <?php
-                        $statusText = DB::table('statuses')->where('idStatus', $zondagQuery[$x+($countPerZaal*3)]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $zondagQuery[$x+($countPerZaal*3)]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $zondagQuery[$x+($countPerZaal*3)]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
                         
