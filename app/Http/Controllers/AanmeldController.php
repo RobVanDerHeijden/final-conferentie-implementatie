@@ -34,7 +34,7 @@ class AanmeldController extends Controller
         
         $aanmelding = new Aanmelding();
         $aanmelding->idSlot = $request["slot1"];
-        $aanmelding->voorkeur = $request["slot-voorkeur"];
+        $aanmelding->voorkeur = 0;
         $aanmelding->idUser = $user->id;
         $aanmelding->onderwerp = $request["onderwerp"];
         $aanmelding->omschrijving = $request["omschrijving"];
