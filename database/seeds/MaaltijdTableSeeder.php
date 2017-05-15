@@ -12,6 +12,7 @@ class MaaltijdTableSeeder extends Seeder
      */
     public function run()
     {
+        /*
         $maaltijd = new Maaltijd();
         $maaltijd->reservering = 1;
         $maaltijd->soort = 1;
@@ -32,5 +33,6 @@ class MaaltijdTableSeeder extends Seeder
         $maaltijd->vegetarisch = "nee";
         $maaltijd->barcode = "0420691337001";
         $maaltijd->save();
+        */
     }
 }
