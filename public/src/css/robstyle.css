@@ -1,0 +1,109 @@
+/*
+table, th, td {
+    border: 1px solid black !important;
+    border-collapse: collapse !important;
+}
+th, td {
+    padding: 15px !important;
+}
+*/
+
+.testClass { 
+    border: 1px solid black;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #463f3f;
+}
+
+.totaalReservering {
+    background-color: greenyellow;
+}
+
+.totaaldiv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:100%;
+    background-color:#4c4a4a;
+    float:left;
+    padding:20px;
+    position: relative;
+    z-index: 10;
+}
+.totaaldiv:after {
+    background-color: grey;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    right: 40px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.fail{
+    background-color: red;
+}
+
+.success{
+    background-color: green;
+}
+    
+.slot_status_open {
+    background-color: lightgreen;
+}
+
+.slot_status_onder_voorbehoud {
+    background-color: orange;
+}
+
+.slot_status_bezet {
+    background-color: lightgrey;
+}
+
+hr.lijnsplit {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+hr.lijnsplit:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+.openstaandTotaal {
+    background-color: darkorange;
+}
+
+.uitgegevenTotaal {
+    background-color: red;
+}
+
+.overTotaal {
+    background-color: green;
+}
