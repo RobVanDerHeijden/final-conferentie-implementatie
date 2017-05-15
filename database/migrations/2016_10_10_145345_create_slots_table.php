@@ -15,9 +15,9 @@ class CreateSlotsTable extends Migration
         Schema::create('slots', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('idZaal')->unsigned();
-            $table->foreign('idZaal')->references('idZaal')->on('zaals');
+            $table->foreign('idZaal')->references('id')->on('zaals');
             $table->integer('idStatus')->unsigned();
-            $table->foreign('idStatus')->references('idStatus')->on('statuses');
+            $table->foreign('idStatus')->references('id')->on('statuses');
             $table->integer('agenda')->unsigned();
             $table->foreign('agenda')->references('id')->on('agendas');
             $table->string('beginTijd');
