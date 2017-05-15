@@ -76,7 +76,7 @@ class AanmeldingTableSeeder extends Seeder
         $aanmelding->idSlot = 9;
         $aanmelding->idUser = 7;
         $aanmelding->onderwerp = "Java";
-        $aanmelding->omschrijving = "How Java is made";1
+        $aanmelding->omschrijving = "How Java is made";
         $aanmelding->wensen = "Powerpoint";
         //$aanmelding->voorkeur = 14;
         $aanmelding->kosten = 33.5;
