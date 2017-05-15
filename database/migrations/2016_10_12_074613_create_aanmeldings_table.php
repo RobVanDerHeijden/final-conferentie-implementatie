@@ -22,9 +22,9 @@ class CreateAanmeldingsTable extends Migration
             $table->string('omschrijving');
             $table->string('wensen');
             $table->integer('voorkeur')->unsigned()->nullable();
-            $table->float('kosten')->unsigned();
+            $table->float('kosten')->unsigned()->nullable();
             $table->string('status');
-            $table->float('tegenBod')->unsigned();
+            $table->float('tegenBod')->unsigned()->nullable();
             $table->timestamps();
         });
     }
