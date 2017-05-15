@@ -28,7 +28,7 @@
                 <tr>
                     <td>{{ $vrijdagSlot->beginTijd }} - {{ $vrijdagSlot->eindTijd }}</td>
                     <?php 
-                        $statusText = DB::table('statuses')->where('idStatus', $vrijdagQuery[$x]->idStatus)->get();
+                        $statusText = DB::table('statuses')->where('id', $vrijdagQuery[$x]->idStatus)->get();
                         $bezetSlot = DB::table('aanmeldings')->where([['idSlot', $vrijdagQuery[$x]->id],['status', 'Geaccepteerd']])->first();
                         $omschrijving = "";
 
