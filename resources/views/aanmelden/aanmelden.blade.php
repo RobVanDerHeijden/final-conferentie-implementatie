@@ -3,7 +3,6 @@
 <?php $sloten1 = DB::table('slots')->where('idStatus', 1)->get(); ?>
 <?php $slotenVoorkeur = DB::table('slots')->where('idStatus', 2)->get(); ?>
 <form  method="post" action='{{route('postaanmelding')}}' id='reserveren'>
-    {{ csrf_field() }}
     <div class ="input-group col-md-12">
         @include('includes.info-box')
         <table>
@@ -101,7 +100,7 @@
             </tr>
 
             <tr>
-                <td><input type="hidden" name="_token" value="{{ Session::token() }}"/></td>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <td></td>
             </tr>
         </table>
