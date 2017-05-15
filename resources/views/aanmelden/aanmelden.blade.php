@@ -3,7 +3,7 @@
 <?php $sloten1 = DB::table('slots')->where('idStatus', 1)->get(); ?>
 <?php $slotenVoorkeur = DB::table('slots')->where('idStatus', 2)->get(); ?>
 <form  method="post" action='{{route('postaanmelding')}}' id='reserveren'>
-    {{ csrf_field }}
+    {{ csrf_field() }}
     <div class ="input-group col-md-12">
         @include('includes.info-box')
         <table>
