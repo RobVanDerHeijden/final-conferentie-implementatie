@@ -17,7 +17,7 @@
                                 <?php $aanvraagUser = DB::table('users')->where('id', $aanmelding->idUser)->get(); ?>
                                 <?php $slotStatus = DB::table('slots')->where('id', $aanmelding->idSlot)->get(); ?>
                                 @if ($slotStatus[0]->idStatus == 2 && $aanmelding->status != 'Geaccepteerd')
-                                    <option value="{{ $aanmelding->idAanmelding }}">
+                                    <option value="{{ $aanmelding->id }}">
                                         IDslot: {{ $aanmelding->idSlot }} 
                                         Naam:{{ $aanvraagUser[0]->naam }} - 
                                         Kosten: {{ $aanmelding->kosten }}
