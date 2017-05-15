@@ -23,7 +23,7 @@ class CreateMaaltijdsTable extends Migration
             //$table->string('beschikbaar');
             $table->string('vegetarisch');
             $table->string('barcode');
-            $table->string('dag');
+            $table->string('dag')->nullable();
         });
     }
 
