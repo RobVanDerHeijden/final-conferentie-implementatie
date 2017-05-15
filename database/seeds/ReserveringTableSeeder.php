@@ -12,6 +12,7 @@ class ReserveringTableSeeder extends Seeder
      */
     public function run()
     {
+        /*
         // Reservering id:1
         $reservering = new Reservering();
         $reservering->idUser = 1;
@@ -92,5 +93,6 @@ class ReserveringTableSeeder extends Seeder
         $reservering->betaalmethode = "Paypal";
         $reservering->prijs = 335; // Alle soorten tickets + lunch op vrijdag
         $reservering->save();
+        */
     }
 }
