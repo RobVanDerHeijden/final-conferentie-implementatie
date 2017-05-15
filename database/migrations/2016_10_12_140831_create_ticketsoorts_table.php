@@ -16,7 +16,7 @@ class CreateTicketsoortsTable extends Migration
             $table->increments('id');
             $table->string('soort');
             $table->float('prijs');
-            $table->integer('beschikbaar');
+            $table->integer('beschikbaar')->nullable();
         });
     }
 
