@@ -110,10 +110,11 @@
     
 
     <!-- Database gegevens voor deze tabel -->
-    <?php $openstaandeKosten = DB::table('aanmeldings')->where([
+    <?php /* $openstaandeKosten = DB::table('aanmeldings')->where([
         ['kosten', '>', 0], 
         ['status', ""]
-    ])->get(); ?>
+    ])->get(); */ ?>
+    <?php $openstaandeKosten = DB::table('aanmeldings')->where(['kosten', '>', 0]['status', ""]])->get(); ?>
     <?php $uitgegevenKosten = DB::table('aanmeldings')->where('status', "Geaccepteerd")->get(); ?>
 
     <?php $totaalOpenstaand = 0; ?>
