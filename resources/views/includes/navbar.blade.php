@@ -17,7 +17,7 @@
             @if(Auth::check())
             <li><a href="/organisator/dashboard">Dashboard</a></li>
             @endif
-            <li><a href="{{URL::to('/')}}">test</a></li>
+            <li><a href="{{URL::to('/reserveren')}}">test</a></li>
         </ul>
     </nav>
 </div>
