@@ -98,7 +98,7 @@ Hartelijk dank voor uw bestelling <u>{{ $userId[0]->naam }}</u>, wij wensen u ee
 <br>
 Als je wilt afzeggen, klik dan op de link:<br>
 <a href="http://damp-reef-29348.herokuapp.com/reserveren/afzeggen?reserveringNr={{ $reserveringNr }}" name="home">Afzeggen</a><br>
-<a href="{{URL::to('/reserveren/afzeggen?reserveringNr=$reservingNr')}}" name="home">Afzeggen2</a>
+<a href="{{URL::to('/reserveren/afzeggen?reserveringNr=')}}{{ $reservingNr }}" name="home">Afzeggen2</a>
 
 Mvg,<br>
 Bunky™ corp.
