@@ -5,6 +5,7 @@ Hier zijn uw tickets:<br>
 @foreach($ticketarray as $ticket)
     <h5>Ticket</h5>
     <img src="http://conferentie-site-bunky.c9users.io/src/tickets/{{ $ticket->id }}.jpg"><br>
+    <img src="http://damp-reef-29348.herokuapp.com/src/tickets/{{ $ticket->id }}.jpg"><br>
 @endforeach
 <br>
 Hier zijn uw maaltijden:<br>
