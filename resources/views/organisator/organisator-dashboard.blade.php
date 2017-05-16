@@ -112,7 +112,7 @@
     <!-- Database gegevens voor deze tabel -->
     <?php  $openstaandeKosten = DB::table('aanmeldings')->where([
         ['kosten', '>', 0], 
-        ['status', ""]
+        ['status', '=', ""]
     ])->get();  ?>
     <?php /*$openstaandeKosten = DB::table('aanmeldings')->where('kosten', '>', 0)->get();*/ ?>
     <?php $uitgegevenKosten = DB::table('aanmeldings')->where('status', "Geaccepteerd")->get(); ?>

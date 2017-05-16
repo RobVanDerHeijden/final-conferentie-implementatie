@@ -29,7 +29,7 @@ class AanmeldingTableSeeder extends Seeder
         $aanmelding->wensen = "Beamer";
         $aanmelding->voorkeur = 4;
         $aanmelding->kosten = 1000;
-        $aanmelding->status = "";
+        //$aanmelding->status = "";
         $aanmelding->save();
         
         $aanmelding = new Aanmelding();
