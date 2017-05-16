@@ -27,12 +27,12 @@ We think <b>{{ $aanmeldingen->tegenBod }}</b> would be a more fair price.<br>
 If you agree with this new price, press the following link:<br>
 <a href="http://conferentie-site-bunky.c9users.io/aanmelden/bevestiging?
 naam={{ $users->naam }}&
-aanmelding={{ $aanmeldingen->idAanmelding }}" name="home">I agree with the new prices!</a><br>
+aanmelding={{ $aanmeldingen->id }}" name="home">I agree with the new prices!</a><br>
 <br>
 If you disagree with this new price, press the following link: (this will terminate your reservation!!)<br>
 <a href="http://conferentie-site-bunky.c9users.io/aanmelden/vervolg?
 naam={{ $users->naam }}&
-aanmelding={{ $aanmeldingen->idAanmelding }}" name="home">I do NOT agree with the new prices!</a><br>
+aanmelding={{ $aanmeldingen->id }}" name="home">I do NOT agree with the new prices!</a><br>
 <br>
 We will wait 3 days for your response!<br>
 If no response is received withing those 3 days, your reservation will be terminated!!<br>
