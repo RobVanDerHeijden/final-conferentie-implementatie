@@ -115,7 +115,11 @@
         ['status', '=', ""]
     ])->get();  ?>
     <?php /*$openstaandeKosten = DB::table('aanmeldings')->where('kosten', '>', 0)->get();*/ ?>
-    <?php $uitgegevenKosten = DB::table('aanmeldings')->where('status', "Geaccepteerd")->get(); ?>
+    <?php //$uitgegevenKosten = DB::table('aanmeldings')->where('status', "Geaccepteerd")->get(); ?>
+    <?php $uitgegevenKosten = DB::table('aanmeldings')->where([
+        ['status', '=', "Geaccepteerd"],
+        ['kosten', '>', 0]
+    ])->get(); ?>
 
     <?php $totaalOpenstaand = 0; ?>
     <?php $totaalUitgegeven = 0; ?>
