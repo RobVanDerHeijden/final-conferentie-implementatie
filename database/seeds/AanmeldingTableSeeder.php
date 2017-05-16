@@ -18,6 +18,7 @@ class AanmeldingTableSeeder extends Seeder
         $aanmelding->omschrijving = "The more you learn, the more you earn!";
         $aanmelding->wensen = "Bookschelves";
         $aanmelding->voorkeur = 0;
+        $aanmelding->status = "";
         $aanmelding->save();
         
         $aanmelding = new Aanmelding();
@@ -28,6 +29,7 @@ class AanmeldingTableSeeder extends Seeder
         $aanmelding->wensen = "Beamer";
         $aanmelding->voorkeur = 4;
         $aanmelding->kosten = 1000;
+        $aanmelding->status = "";
         $aanmelding->save();
         
         $aanmelding = new Aanmelding();
@@ -38,6 +40,7 @@ class AanmeldingTableSeeder extends Seeder
         $aanmelding->wensen = "Beamer";
         $aanmelding->voorkeur = 0;
         $aanmelding->kosten = 2000;
+        $aanmelding->status = "";
         $aanmelding->save();
         
         $aanmelding = new Aanmelding();
@@ -48,6 +51,7 @@ class AanmeldingTableSeeder extends Seeder
         $aanmelding->wensen = "Powerpoint";
         $aanmelding->voorkeur = 14;
         $aanmelding->kosten = 3000;
+        $aanmelding->status = "";
         $aanmelding->save();
         
         $aanmelding = new Aanmelding();
