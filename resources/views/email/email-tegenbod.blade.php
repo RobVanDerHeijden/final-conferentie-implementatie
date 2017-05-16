@@ -20,17 +20,18 @@ Hello {{ $users->naam }},<br>
 First things first.<br>
 We want to thank you for singing up for our confererence!<br>
 <br>
-But unfortunately, we think your price of <b>{{ $aanmeldingen->kosten }}</b> is set to high.<br>
+But unfortunately, we disagree with the price you requested of <b>{{ $aanmeldingen->kosten }}</b>.
 <br>
 We think <b>{{ $aanmeldingen->tegenBod }}</b> would be a more fair price.<br>
 <br>
 If you agree with this new price, press the following link:<br>
-<a href="http://conferentie-site-bunky.c9users.io/aanmelden/bevestiging?
+<a href="http://damp-reef-29348.herokuapp.com//aanmelden/bevestiging?
 naam={{ $users->naam }}&
 aanmelding={{ $aanmeldingen->id }}" name="home">I agree with the new prices!</a><br>
+
 <br>
 If you disagree with this new price, press the following link: (this will terminate your reservation!!)<br>
-<a href="http://conferentie-site-bunky.c9users.io/aanmelden/vervolg?
+<a href="http://damp-reef-29348.herokuapp.com//aanmelden/vervolg?
 naam={{ $users->naam }}&
 aanmelding={{ $aanmeldingen->id }}" name="home">I do NOT agree with the new prices!</a><br>
 <br>
