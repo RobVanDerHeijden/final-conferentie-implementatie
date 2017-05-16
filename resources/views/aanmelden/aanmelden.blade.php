@@ -91,7 +91,7 @@
             
             <tr>
                 <td><label for="kosten">Kosten (tussen 0 and 25000):</label></td>
-                <td><input type="number" name="kosten" min="0" max="25000" step="0.01"></td>
+                <td><input type="number" name="kosten" min="0" max="25000" step="0.01" value="0"></td>
             </tr>
 
             <tr>

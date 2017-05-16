@@ -39,11 +39,9 @@ class AanmeldController extends Controller
         $aanmelding->onderwerp = $request["onderwerp"];
         $aanmelding->omschrijving = $request["omschrijving"];
         $aanmelding->wensen = $request["wensen"];
-        /*if (isset($request["kosten"])) {
+
             $aanmelding->kosten = $request["kosten"];
-        } else {*/
-            $aanmelding->kosten = 0.0;
-        //}
+
         $aanmelding->status = "";
         $aanmelding->save();
         
