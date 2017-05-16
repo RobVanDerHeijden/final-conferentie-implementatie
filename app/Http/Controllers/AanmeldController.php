@@ -40,6 +40,7 @@ class AanmeldController extends Controller
         $aanmelding->omschrijving = $request["omschrijving"];
         $aanmelding->wensen = $request["wensen"];
         $aanmelding->kosten = $request["kosten"];
+        $aanmelding->status = "";
         $aanmelding->save();
         
         DB::table('slots')->where('id', $request["slot1"])->update(['idStatus' => 2]);
