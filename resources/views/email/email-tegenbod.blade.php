@@ -25,14 +25,14 @@ But unfortunately, we disagree with the price you requested of <b>{{ $aanmelding
 We think <b>{{ $aanmeldingen->tegenBod }}</b> would be a more fair price.<br>
 <br>
 If you agree with this new price, press the following link:<br>
-<a href="http://damp-reef-29348.herokuapp.com//aanmelden/bevestiging?
-naam={{ $users->naam }}&
+<a href="{{URL::to(/aanmelden/bevestiging?
+naam=)}}{{ $users->naam }}&
 aanmelding={{ $aanmeldingen->id }}" name="home">I agree with the new prices!</a><br>
 
 <br>
 If you disagree with this new price, press the following link: (this will terminate your reservation!!)<br>
-<a href="http://damp-reef-29348.herokuapp.com//aanmelden/vervolg?
-naam={{ $users->naam }}&
+<a href="{{URL::to(/aanmelden/vervolg?
+naam=)}}{{ $users->naam }}&
 aanmelding={{ $aanmeldingen->id }}" name="home">I do NOT agree with the new prices!</a><br>
 <br>
 We will wait 3 days for your response!<br>
